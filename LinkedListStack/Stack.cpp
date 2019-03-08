@@ -22,6 +22,7 @@ Stack & Stack::operator=(const Stack & source)
 
 	if (source.pNextElement != nullptr)
 	{
+		pNextElement = new Stack();
 		*pNextElement = *(source.pNextElement);
 	}
 	val = source.val;
